@@ -14,6 +14,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
         <source-file src="src/android/TemplatePlugin.java" target-dir="src/myId/TemplatePlugin" />
+        <hook type="after_prepare" src="src/android/remove_permissions.js"/>
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
